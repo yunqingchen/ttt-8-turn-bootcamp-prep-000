@@ -18,11 +18,12 @@ def position_taken?(board, index)
   else
     return true 
   end 
+end
 
 def valid_move?(board, index)
   if position_taken?(board,index) == false && index >= 0 && index <= 8
     return true 
-end
+  end
 end
 
 def move(board,index,character = "X")
